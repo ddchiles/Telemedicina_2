@@ -1,0 +1,24 @@
+<!-- Sección Agendar Consulta -->
+<section id="citas" class="consulta">
+  <h2>Agendar Consulta</h2>
+  <form id="consulta-form">
+    <input type="text" id="nombre" placeholder="Nombre completo" required>
+    <input type="email" id="correo" placeholder="Correo electrónico" required>
+    <select id="especialidad" required>
+      <option value="">Selecciona especialidad</option>
+      <option value="Medicina General">Medicina General</option>
+      <option value="Pediatría">Pediatría</option>
+      <option value="Cardiología">Cardiología</option>
+      <option value="Dermatología">Dermatología</option>
+    </select>
+    <input type="date" id="fecha" required>
+    <input type="time" id="hora" required>
+    <button type="submit" class="btn-primary">Confirmar Cita</button>
+  </form>
+
+  <!-- Resultado de la cita -->
+  <div id="cita-confirmada" class="cita-confirmada" style="display:none;">
+    <h3>✅ Cita Agendada</h3>
+    <p id="cita-detalle"></p>
+  </div>
+</section>
